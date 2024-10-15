@@ -1,0 +1,55 @@
+{
+  "cookies": [
+    {
+      "name": "JSESSIONID",
+      "value": "aaaP08hnwUcDFgjtGImkz",
+      "domain": "test4.webops.net",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AWSALBTG",
+      "value": "rQwr/vMXY+ldjbFh9WUUWycPkR8+HHA7jhxd1lYfRWhLSJDW9AnCWJx33q0vdhlkWaB6hHCrzTurGi/Dm8uGUyXtMfhVFvt16DVLEjAwS/Ri+CMuL4BBLm6DDv/RDHV+jRfu767IEVlpCUZut46OfPojyC516GbjrjrBTdBzunOV",
+      "domain": "test4.webops.net",
+      "path": "/",
+      "expires": 1729554646.151957,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AWSALBTGCORS",
+      "value": "rQwr/vMXY+ldjbFh9WUUWycPkR8+HHA7jhxd1lYfRWhLSJDW9AnCWJx33q0vdhlkWaB6hHCrzTurGi/Dm8uGUyXtMfhVFvt16DVLEjAwS/Ri+CMuL4BBLm6DDv/RDHV+jRfu767IEVlpCUZut46OfPojyC516GbjrjrBTdBzunOV",
+      "domain": "test4.webops.net",
+      "path": "/",
+      "expires": 1729554646.152135,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AWSALB",
+      "value": "95QEuUTlibY/ebpw+pXNsATTSfOSZzhOkl6ZQqDiqq+6r2dAJ2foZa6VKFgFOHQJH3OuH87Bm+sRWlZVRhB8C6TTW2V1nPM5kuLwgbp8niCdEx3rQL/+9QCGSiLE",
+      "domain": "test4.webops.net",
+      "path": "/",
+      "expires": 1729554646.152185,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AWSALBCORS",
+      "value": "95QEuUTlibY/ebpw+pXNsATTSfOSZzhOkl6ZQqDiqq+6r2dAJ2foZa6VKFgFOHQJH3OuH87Bm+sRWlZVRhB8C6TTW2V1nPM5kuLwgbp8niCdEx3rQL/+9QCGSiLE",
+      "domain": "test4.webops.net",
+      "path": "/",
+      "expires": 1729554646.152228,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": []
+}

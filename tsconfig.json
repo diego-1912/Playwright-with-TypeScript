@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "target": "es2016",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "baseUrl": ".",
+      "paths": {
+        "@config/*": ["config/*"],
+        "@helpers/*": ["helpers/*"],
+        "@pages/*": ["pages/*"],
+        "@pages/admin/*": ["pages/admin/*"],
+        "@pages/admin/branch/*": ["pages/admin/branch/*"],
+        "@pages/admin/company/*": ["pages/admin/company/*"],
+        "@pages/admin/discrepancy-code/*": ["pages/admin/discrepancy-code/*"],
+        "@pages/admin/hospital/*": ["pages/admin/hospital/*"],
+        "@pages/admin/hospital-prices-upload/*": ["pages/admin/hospital-prices-upload/*"],
+        "@pages/admin/hospital-system/*": ["pages/admin/hospital-system/*"],
+        "@pages/admin/manufacturer/*": ["pages/admin/manufacturer/*"],
+        "@pages/admin/order-hold-reason-code/*": ["pages/admin/order-hold-reason-code/*"],
+        "@pages/admin/physician/*": ["pages/admin/physician/*"],
+        "@pages/case/*": ["pages/case/*"],
+        "@pages/login/*": ["pages/login/*"],
+        "@tests/*": ["webops_tests/tests/*"]
+      }
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules"]
+  }
+  

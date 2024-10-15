@@ -1,0 +1,440 @@
+2024-10-04T21:55:59.338Z [info]: Starting login test with valid credentials
+2024-10-04T21:56:29.547Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T21:56:29.548Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T21:58:51.982Z [info]: Starting login test with valid credentials
+2024-10-04T21:59:07.087Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T21:59:07.087Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T21:59:35.268Z [info]: Starting login test with valid credentials
+2024-10-04T21:59:43.602Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T21:59:43.603Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T22:01:25.319Z [info]: Starting login test with valid credentials
+2024-10-04T22:02:19.331Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T22:02:19.331Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T22:02:31.470Z [info]: Starting login test with valid credentials
+2024-10-04T22:02:46.252Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T22:02:46.253Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T22:03:07.322Z [info]: Starting login test with valid credentials
+2024-10-04T22:03:22.919Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T22:03:22.919Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-04T22:21:05.855Z [info]: Starting login test with valid credentials
+2024-10-05T01:07:03.236Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, TimeoutError: page.fill: Timeout 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T01:07:03.237Z [error]: Failed to perform login for username: miguelcorrea, TimeoutError: page.fill: Timeout 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T01:36:06.746Z [info]: Starting login test with valid credentials
+2024-10-05T01:36:14.432Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T01:36:14.433Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T01:36:17.442Z [info]: Starting login test with invalid credentials
+2024-10-05T01:36:23.728Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T01:36:23.729Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T01:39:05.775Z [info]: Starting login test with valid credentials
+2024-10-05T01:40:05.809Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, TimeoutError: page.fill: Timeout 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T01:40:05.810Z [error]: Failed to perform login for username: miguelcorrea, TimeoutError: page.fill: Timeout 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T01:40:08.662Z [info]: Starting login test with invalid credentials
+2024-10-05T01:40:10.815Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T01:40:10.816Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:13:06.875Z [info]: Starting login test with valid credentials
+2024-10-05T03:14:06.906Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, TimeoutError: page.fill: Timeout 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:14:06.907Z [error]: Failed to perform login for username: miguelcorrea, TimeoutError: page.fill: Timeout 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:14:09.584Z [info]: Starting login test with invalid credentials
+2024-10-05T03:14:14.765Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:14:14.766Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:22:03.730Z [info]: Starting login test with valid credentials
+2024-10-05T03:22:39.374Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:22:39.375Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:30:23.897Z [info]: Starting login test with valid credentials
+2024-10-05T03:31:08.694Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:31:08.696Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:48:53.276Z [info]: Starting login test with valid credentials
+2024-10-05T03:48:54.833Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:48:54.834Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:48:57.709Z [info]: Starting login test with invalid credentials
+2024-10-05T03:49:12.629Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:49:12.630Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:50:42.177Z [info]: Starting login test with valid credentials
+2024-10-05T03:51:42.218Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, TimeoutError: page.fill: Timeout 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:51:42.219Z [error]: Failed to perform login for username: miguelcorrea, TimeoutError: page.fill: Timeout 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:51:44.921Z [info]: Starting login test with invalid credentials
+2024-10-05T03:53:50.606Z [info]: Starting login test with valid credentials
+2024-10-05T03:56:39.836Z [info]: Starting login test with valid credentials
+2024-10-05T03:58:27.446Z [info]: Starting login test with valid credentials
+2024-10-05T03:58:39.334Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:58:39.335Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:58:42.242Z [info]: Starting login test with invalid credentials
+2024-10-05T03:59:12.152Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T03:59:12.154Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:01:55.198Z [info]: Starting login test with valid credentials
+2024-10-05T04:01:58.088Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:01:58.089Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:02:01.125Z [info]: Starting login test with invalid credentials
+2024-10-05T04:02:11.713Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:02:11.713Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:21:02.172Z [info]: Starting login test with valid credentials
+2024-10-05T04:21:03.281Z [info]: Starting login test with invalid credentials
+2024-10-05T04:21:43.318Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:21:43.319Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:21:45.075Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:21:45.076Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:22:57.475Z [info]: Starting login test with valid credentials
+2024-10-05T04:22:57.811Z [info]: Starting login test with invalid credentials
+2024-10-05T04:23:13.365Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:23:13.365Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:23:14.613Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:23:14.613Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:26:52.250Z [info]: Starting login test with invalid credentials
+2024-10-05T04:26:52.327Z [info]: Starting login test with valid credentials
+2024-10-05T04:27:15.088Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:27:15.089Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:27:16.001Z [error]: Failed to fill input input.input-field.user_name with value: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:27:16.001Z [error]: Failed to perform login for username: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:40:57.016Z [info]: Starting login test with valid credentials
+2024-10-05T04:40:57.021Z [info]: Starting login test with invalid credentials
+2024-10-05T04:41:10.203Z [error]: Failed to fill input input.input-field.user_name with value: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:41:10.204Z [error]: Failed to perform login for username: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:41:10.942Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:41:10.942Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:44:37.084Z [info]: Starting login test with invalid credentials
+2024-10-05T04:44:37.154Z [info]: Starting login test with valid credentials
+2024-10-05T04:45:19.323Z [error]: Failed to fill input input.input-field.user_name with value: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:45:19.324Z [error]: Failed to perform login for username: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:45:20.369Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:45:20.369Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:45:47.512Z [info]: Starting login test with valid credentials
+2024-10-05T04:45:59.764Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:45:59.765Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:46:45.884Z [info]: Starting login test with valid credentials
+2024-10-05T04:46:49.771Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:46:49.772Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:47:02.730Z [info]: Starting login test with valid credentials
+2024-10-05T04:47:28.316Z [error]: Failed to fill input input.input-field.user_name with value: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:47:28.317Z [error]: Failed to perform login for username: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:48:19.125Z [info]: Starting login test with valid credentials
+2024-10-05T04:48:35.052Z [error]: Failed to fill input input.input-field.user_name with value: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:48:35.053Z [error]: Failed to perform login for username: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:50:46.648Z [info]: Starting login test with valid credentials
+2024-10-05T04:51:46.692Z [error]: Failed to fill input input.input-field.user_name with value: DiegoV, TimeoutError: page.fill: Timeout 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:51:46.693Z [error]: Failed to perform login for username: DiegoV, TimeoutError: page.fill: Timeout 60000ms exceeded.
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:52:02.470Z [info]: Starting login test with valid credentials
+2024-10-05T04:52:12.077Z [error]: Failed to fill input input.input-field.user_name with value: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:52:12.079Z [error]: Failed to perform login for username: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:52:21.409Z [info]: Starting login test with valid credentials
+2024-10-05T04:52:38.206Z [error]: Failed to fill input input.input-field.user_name with value: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:54:12.124Z [info]: Starting login test with valid credentials
+2024-10-05T04:54:21.082Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:54:21.083Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:56:45.361Z [info]: Starting login test with valid credentials
+2024-10-05T04:56:45.384Z [info]: Starting login test with invalid credentials
+2024-10-05T04:57:21.705Z [error]: Failed to fill input input.input-field.user_name with value: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:57:21.705Z [error]: Failed to perform login for username: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:57:22.884Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T04:57:22.885Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:10:32.933Z [info]: Starting login test with valid credentials
+2024-10-05T22:10:33.129Z [info]: Starting login test with invalid credentials
+2024-10-05T22:10:38.977Z [error]: Failed to fill input input.input-field.user_name with value: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:10:38.977Z [error]: Failed to perform login for username: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:10:39.751Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:10:39.752Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:13:39.154Z [info]: Starting login test with valid credentials
+2024-10-05T22:13:57.188Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:13:57.189Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:15:39.296Z [info]: Starting login test with invalid credentials
+2024-10-05T22:15:39.521Z [info]: Starting login test with valid credentials
+2024-10-05T22:15:55.715Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:15:55.716Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:15:58.673Z [error]: Failed to fill input input.input-field.user_name with value: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:15:58.673Z [error]: Failed to perform login for username: DiegoV, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:18:45.216Z [info]: Starting login test with valid credentials
+2024-10-05T22:19:34.724Z [error]: Failed to fill input input.input-field.user_name with value: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:19:34.724Z [error]: Failed to perform login for username: miguelcorrea, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:20:35.899Z [info]: Starting login test with invalid credentials
+2024-10-05T22:21:22.966Z [error]: Failed to fill input input.input-field.user_name with value: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+
+2024-10-05T22:21:22.966Z [error]: Failed to perform login for username: wronguser, Error: page.fill: Target page, context or browser has been closed
+Call log:
+  [2m- waiting for locator('input.input-field.user_name')[22m
+

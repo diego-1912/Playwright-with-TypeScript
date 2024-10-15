@@ -1,0 +1,3 @@
+2024-10-07T15:56:48.335Z [info]: Navigating to https://test4.webops.net/do/startLogin for project Test4
+2024-10-07T15:57:09.678Z [info]: Logged in with username: miguelcorrea for project Test4
+2024-10-07T15:57:09.696Z [info]: Saved storage state for project Test4 at c:\Users\louvr\OneDrive - WebOps\Documentos\WebOps UI Tests\playwright-testing\webops_tests\config\storageState-Test4.json

@@ -1,0 +1,1875 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000"/>
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="shortcut icon" href="../resource/favicon.ico">
+    <link rel="icon" href="../resource/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../resource/favicon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <script src="../resource/kendoUI2020/js/jquery.min.webops24.10.9.500.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../resource/jquery/ui/jquery-ui.min.webops24.10.9.500.js"></script>
+    <script type="text/javascript" src="../resource/js/util.webops24.10.9.500.js"></script>
+    <style>
+        a[href]:after {
+            content: "" !important;
+        }
+    </style>
+    <title>Manufacturer Edit</title>
+    <link rel="stylesheet" type="text/css"
+          href="../resource/bootstrap-3.3.4-dist/css/bootstrap.min.webops24.10.9.500.css"/>
+    <script type="text/javascript"
+            src="../resource/bootstrap-3.3.4-dist/js/bootstrap.min.webops24.10.9.500.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="../resource/calendar/bootstrap-datepicker/bootstrap-datepicker3.min.webops24.10.9.500.css"/>
+    <script type="text/javascript"
+            src="../resource/calendar/bootstrap-datepicker/bootstrap-datepicker.min.webops24.10.9.500.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../resource/lightbox/css/lightbox.webops24.10.9.500.css"
+          media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../resource/yui/fonts/fonts-min.webops24.10.9.500.css"/>
+    <link rel="stylesheet" type="text/css" href="../resource/yui/button/assets/skins/sam/button.webops24.10.9.500.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="../resource/yui/button/assets/skins/sam/yuibutton.webops24.10.9.500.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="../resource/yui/button/assets/skins/sam/tabview.webops24.10.9.500.css"/>
+    <script type="text/javascript" src="../resource/yui/yahoo-dom-event/yahoo-dom-event.webops24.10.9.500.js"></script>
+    <script type="text/javascript" src="../resource/yui/element/element-min.webops24.10.9.500.js"></script>
+    <script type="text/javascript" src="../resource/yui/button/button-min.webops24.10.9.500.js"></script>
+    <script type="text/javascript" src="../resource/yui/button/ButtonVars.webops24.10.9.500.js"></script>
+    <script src="../resource/yui/yui-min.webops24.10.9.500.js"></script>
+    <link rel="stylesheet" href="../resource/font/font-awesome-4.3.0/css/font-awesome.min.webops24.10.9.500.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../resource/jqGrid/css/ui.jqgrid.webops24.10.9.500.css"/>
+    <link rel="stylesheet" type="text/css" href="../resource/webops3.webops24.10.9.500.css"/>
+    <script type="text/javascript" src="../resource/json/jsonrpc.webops24.10.9.500.js"></script>
+    <script type="text/javascript" src="../resource/json/util.webops24.10.9.500.js"></script>
+    <link rel="stylesheet" href="../resource/qtip2/2.2.0/jquery.qtip.min.webops24.10.9.500.css"/>
+    <script src="../resource/qtip2/2.2.0/jquery.qtip.min.webops24.10.9.500.js"></script>
+    <script type="text/javascript" src="../resource/js/bootstrap-confirmation.webops24.10.9.500.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resource/public.webops24.10.9.500.css"/>
+    <link rel="stylesheet" type="text/css" href="../resource/webops_theme.webops24.10.9.500.css"/>
+    <link rel="stylesheet" type="text/css" href="../resource/webops.webops24.10.9.500.css"/>
+    <link rel="stylesheet" type="text/css" href="../resource/pwdmeter.webops24.10.9.500.css"/>
+    <script type="text/javascript" src="../resource/js/pwdmeter.webops24.10.9.500.js"></script>
+
+    
+
+<link rel="stylesheet" href="../resource/kendoUI2020/styles/kendo.common.min.webops24.10.9.500.css"/>
+<link rel="stylesheet" href="../resource/kendoUI2020/styles/kendo.bootstrap.min.webops24.10.9.500.css"/>
+<link rel="stylesheet" href="../resource/kendoUI2020/styles/kendo.bootstrap.mobile.min.webops24.10.9.500.css"/>
+<link rel="stylesheet" href="../resource/kendoUI2020/custom/css/kendoGrid.webops24.10.9.500.css"/>
+
+    
+
+<script src="../resource/kendoUI2020/js/kendo.all.min.webops24.10.9.500.js"></script>
+<script src="../resource/kendoUI2020/custom/kendoDatePicker.webops24.10.9.500.js"></script>
+<script src="../resource/kendoUI2020/custom/kendoGrid.webops24.10.9.500.js"></script>
+
+    
+    <script language="JavaScript1.2">
+        HM_Roles = [true, false, true, true, true,
+            true, true, true, true, true,
+            false, false, false];
+        var HM_LoanerBankExists = false;
+    </script>
+    <script type="text/javascript">
+        if (!Array.prototype.indexOf) {
+            Array.prototype.indexOf = function (obj, start) {
+                for (var i = (start || 0), j = this.length; i < j; i++) {
+                    if (this[i] === obj) {
+                        return i;
+                    }
+                }
+                return -1;
+            }
+        }
+
+        if (typeof console == "undefined") {
+            this.console = {
+                log: function () {
+                }
+            };
+        }
+        var jsonurl = "../JSON-RPC";
+        var jsonrpc = null;
+        if (jsonrpc == null) init();
+        jQuery(function () {
+            jQuery('[data-toggle="confirmation"]').confirmation();
+        })
+    </script>
+    
+
+    <!-- IE8 compatibility for bootstrap -->
+    <!--[if lt IE 9]>
+    <script src="../resource/browser-compatibility/html5shiv.webops24.10.9.500.js"></script>
+    <script src="../resource/browser-compatibility/respond..webops24.10.9.500.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+
+    
+
+
+
+
+
+
+<style>
+    .notificationBanner {
+        font-weight: bold;
+        color: red;
+        font-size: medium;
+    }
+</style>
+
+        <div class="row" style="text-align: center;width: 100%;">
+    
+    <div class="col-md-2" style="display: inline-block;float: left;text-align: left;">
+        <div class="logo hidden-xs">
+            
+                    <img src="../images/logos/webops-logo-header41px.png" border="0" height="41px">
+                
+        </div>
+    </div>
+    
+    <div class="col-md-2" style="display: inline-block;float: right;text-align: right;margin-right: -15px;">
+        <div class="logo hidden-xs pull-right">
+            <a href="../do/homePage">
+                
+                        <img src="../images/logos/webops-test-4-41px.png" class="pull-right" border="0" height="41px" style="visibility: hidden">
+                    
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" src="../resource/jquery/widgets/UIMultiSelect_1_13/js/jquery.multiselect.min.webops24.10.9.500.js"></script>
+
+<script>
+    $.ech.multiselect.prototype.options.checkAllText = "Check All";
+    $.ech.multiselect.prototype.options.uncheckAllText = "Uncheck All";
+</script>
+<script type="text/javascript">
+    function openTrainingWindow(){
+        var token = 'dHRuQld2dUlsSG90elhJSG5xWFB0clZvRnhteWFBWEt0NkYydFJhOWJMb0VqeEtlbjU4Zm9BPT0='
+
+        $.ajax({
+            url:"../authenticateToken?setExpiration=1&token="+ token,
+            cache:false,
+            success:function(data){
+
+                var timestamp= new Date().getTime()
+
+                var url = 'https://training.webops.com?token='+encodeURIComponent(data) + '&client_referrer_url=' + encodeURIComponent('https://test4.webops.net')+ '&timestamp=' + timestamp
+                /* if (!url.match(/^https?:\/\//i)) {
+                     url = 'http://' + url;
+                 }*/
+                window.open(url)
+            }
+        })
+
+    }
+</script>
+
+<div class="navbar navbar-webops">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="visible-xs-block visible-sm-block navbar-brand" href="#">WebOps</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle menu_link" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <span class="glyphicon glyphicon-user"></span> Admin
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="../do/manufacturerList">Manufacturer</a>
+                                </li>
+                            </ul>
+                        </li>
+                    
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle menu_link" data-toggle="dropdown" role="button" aria-expanded="false" href="#">
+                        Miguel Correa <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                            <li><a href="../do/logout">Logout</a></li>
+
+                        
+                        
+
+
+                        <li><a href="javascript:openTrainingWindow()">Training</a></li>
+                        <li><a href="../do/releaseNotesMenu">Release Notes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <div class="branch-wrapper col-xs-12">
+            
+                <div class="manufacturer-dropdown col-xs-12 col-sm-6">
+                    <label class="col-xs-3 col-md-2" for="manufacturer-dropdown">
+                        Manufacturer
+                    </label>
+                    <div class="col-xs-12 col-sm-9">
+                        <form name="manufacturerSelectForm" method="post" action="/do/manufacturerSelect">
+                            <input type="hidden" name="manufacturerId" value="0">
+                            <select name="currentManufacturer" onchange="manufacturerSelect()" id="manufacturer-dropdown" class="form-control"><option value="0" selected="selected">Please select a Manufacturer</option>
+                                
+                                <option value="1078">aegWw</option>
+<option value="1091">dfb</option>
+<option value="1087">FAwf</option>
+<option value="1088">FAwf</option>
+<option value="1089">FAwf</option>
+<option value="1079">FAwf</option>
+<option value="1080">FAwf</option>
+<option value="1081">FAwf</option>
+<option value="1082">FAwf</option>
+<option value="1083">FAwf</option>
+<option value="1084">FAwf</option>
+<option value="1085">FAwf</option>
+<option value="1043">kien test 1</option>
+<option value="1024">M-2</option>
+<option value="1025">M-3</option>
+<option value="1042">man test1</option>
+<option value="1022">Manual Manufacturer</option>
+<option value="1044">Manufacturer Auto - 1632301</option>
+<option value="1030">Manufacturer Auto - 168651</option>
+<option value="1055">Manufacturer Auto - 271560</option>
+<option value="1061">Manufacturer Auto - 282569</option>
+<option value="1056">Manufacturer Auto - 367891</option>
+<option value="1070">Manufacturer Auto - 401803</option>
+<option value="1019">Manufacturer Auto - 430025</option>
+<option value="1020">Manufacturer Auto - 430025</option>
+<option value="1021">Manufacturer Auto - 430025</option>
+<option value="1057">Manufacturer Auto - 435295</option>
+<option value="1052">Manufacturer Auto - 440781</option>
+<option value="1058">Manufacturer Auto - 468530</option>
+<option value="1031">Manufacturer Auto - 494095</option>
+<option value="1069">Manufacturer Auto - 505206</option>
+<option value="1051">Manufacturer Auto - 530537</option>
+<option value="1062">Manufacturer Auto - 548868</option>
+<option value="1068">Manufacturer Auto - 549535</option>
+<option value="1053">Manufacturer Auto - 628350</option>
+<option value="1054">Manufacturer Auto - 631346</option>
+<option value="1065">Manufacturer Auto - 642276</option>
+<option value="1050">Manufacturer Auto - 683119</option>
+<option value="1028">Manufacturer Auto - 698198</option>
+<option value="1048">Manufacturer Auto - 701355</option>
+<option value="1063">Manufacturer Auto - 719408</option>
+<option value="1059">Manufacturer Auto - 730298</option>
+<option value="1047">Manufacturer Auto - 746340</option>
+<option value="1066">Manufacturer Auto - 764745</option>
+<option value="1049">Manufacturer Auto - 791680</option>
+<option value="1067">Manufacturer Auto - 909434</option>
+<option value="1060">Manufacturer Auto - 922191</option>
+<option value="1027">Manufacturer Auto - 937499</option>
+<option value="1064">Manufacturer Auto - 945653</option>
+<option value="1023">Manufacturer Automatic Test</option>
+<option value="1029">Manufacturer Automatic Test2</option>
+<option value="1017">Rmanf</option>
+<option value="1046">Rmanf2</option>
+<option value="1015">Stryker Orthopaedics / Wright Tornier</option>
+<option value="1037">test man 1</option>
+<option value="1038">test man 2</option>
+<option value="1039">test man 2</option>
+<option value="1040">test man 3</option>
+<option value="1041">test man 4</option>
+<option value="1086">Testing</option>
+<option value="1071">Testing</option>
+<option value="1090">Testing</option>
+<option value="1076">Testing10101</option>
+<option value="1077">Testing10101</option>
+<option value="1072">Testing123</option>
+<option value="1073">Testing123DIEGO</option>
+<option value="1074">Testing123DIEGO123</option>
+<option value="1075">TESTINGMANUFACTUER</option>
+<option value="1016">TestM</option>
+<option value="1026">TestQA</option>
+<option value="1018">Vendor Bravo</option>
+<option value="1032">Vendor Golf</option></select>
+                        </form>
+                    </div>
+                </div>
+            
+            
+        </div>
+</div>
+
+<script>
+    function branchSelect() {
+        document.branchSelectForm.branchId.value = $('#branch-dropdown').val();
+        document.branchSelectForm.submit();
+    }
+    function manufacturerSelect() {
+        document.manufacturerSelectForm.manufacturerId.value = $('#manufacturer-dropdown').val();
+        document.manufacturerSelectForm.submit();
+    }
+</script>
+
+
+
+
+
+<div id="strongPswdExpirationMsg"></div>
+
+
+    
+    
+        
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../resource/js/inlineForm.webops24.10.9.500.js"></script>
+<script src="../resource/js/react/react.development.js"></script>
+
+<script src="../resource/js/react/react-dom.development.js"></script>
+<script src="../resource/js/ajax.js"></script>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="../resource/jquery/ui/jquery-ui.webops24.10.9.500.css"/>
+<link rel="stylesheet" type="text/css" href="../resource/jquery/widgets/UIMultiSelect_1_13/css/jquery.multiselect.webops24.10.9.500.css"/>
+<script type="text/javascript" src="../resource/jquery/ui/jquery-ui.min.webops24.10.9.500.js"></script>
+
+<style>
+    .divider {
+        height: 1px;
+        width: 100%;
+        display: block;
+        margin: 9px 0px;
+        overflow: hidden;
+        background-color: #000000;
+    }
+</style>
+<script type="text/javascript">
+    var dateFormat = 'yyyy-MM-dd';
+
+    function doSubmit() {
+        $('#revisionInfoEnabled').prop("disabled", false);
+        $('#revisionInfoRequired').prop("disabled", false);
+        document.manufacturerForm.submit();
+    }
+    function doSave() {
+        document.manufacturerForm.submit.value = "Save";
+        doSubmit();
+    }
+    function doCancel() {
+        $('form[name="manufacturerForm"]').html('<input type="hidden" name="org.apache.struts.taglib.html.CANCEL" value="true"/>');
+        doSubmit();
+    }
+
+    function toggleRevision() {
+        if ($('#revisionInfoRequired').is(':checked')) {
+            $('#revisionInfoEnabled').prop("disabled", true);
+        }
+        else {
+            $('#revisionInfoEnabled').prop("disabled", false);
+        }
+    }
+
+    function confirmStrongPswd(element) {
+        var conf = false;
+        var conf = false;
+
+        if ($("h3.popover-title:visible").length) {
+            $("#strongPswd").confirmation('destroy');
+        }
+
+
+        if (element.checked == false) {
+            $("#strongPswd").confirmation({
+                title: "Warning: You are disabling the Strong Password feature which may make this application noncompliant with your corporate security standards. This change will be logged with your User ID, date and timestamp.",
+                btnOkLabel: "Disable",
+                btnCancelLabel: "Cancel",
+                onConfirm: function () {
+                    element.checked = false;
+                    $("#securityOpts").hide();
+                    conf = true;
+                    $('#strongPswd').confirmation('destroy');
+                    $("#maximumNumberOfAllowedFailedAttempts").val("0");
+                },
+                onCancel: function () {
+                    element.checked = true;
+                    $("#securityOpts").show();
+                    conf = false;
+                    $('#strongPswd').confirmation('destroy');
+                    $("#maximumNumberOfAllowedFailedAttempts").val("5");
+                }
+            });
+            $("#strongPswd").confirmation("show");
+
+            return conf;
+        }
+        if (element.checked == true) {
+            $("#strongPswd").confirmation({
+                title: "Warning: This change will force all users in the system to reset their password on the next login if their password does not meet the minimum standards",
+                btnOkLabel: "Enable",
+                btnCancelLabel: "Cancel",
+                onConfirm: function () {
+                    element.checked = true;
+                    $("#securityOpts").show();
+                    conf = true;
+                    $('#strongPswd').confirmation('destroy');
+                    $("#maximumNumberOfAllowedFailedAttempts").val("5");
+                },
+                onCancel: function () {
+                    element.checked = false;
+                    $("#securityOpts").hide();
+                    conf = false;
+                    $('#strongPswd').confirmation('destroy');
+                    $("#maximumNumberOfAllowedFailedAttempts").val("0");
+                }
+            });
+            $("#strongPswd").confirmation("show");
+
+            return conf;
+        }
+        return conf;
+    }
+
+    /* See manufacturerRevisedChoiceForm.jsp for these elements */
+    function editMRC(element) {
+        var id = $(element).attr('data-id');
+        var name = element.innerText;
+        var active = $(element).attr('data-active');
+        var mfgrId = $("#mfgrId").val();
+        $("#MRCId").val(id);
+        $("#MRCName").val(name);
+        $("#MRCActive").prop('checked', active != "false");
+        $("#MRCMfgrId").val(mfgrId);
+    }
+    function addMRC() {
+        $("#MRCActive").prop('checked', true);
+        $("#MRCName").val("");
+        $("#MRCId").val(0);
+        $("#MRCMfgrId").val(name);
+        var mfgrId = $("#mfgrId").val();
+        $("#MRCMfgrId").val(mfgrId);
+    }
+
+    function getIEVersion() {
+        var version = -1; //default non-IE browser
+        if (navigator.appVersion.indexOf("MSIE") != -1)
+            version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+        return version;
+    }
+    var oldBin
+    var bCancel
+
+    $(document).ready(function () {
+        oldBin = document.manufacturerForm['binLocationFormat'].value;
+        bCancel = false;
+
+        if (!$('#revisionInfoEnabled').is(':checked')) {
+            console.log("Test success")
+            $('#revisionInfoRequired').prop("disabled", true);
+        }
+
+        if ($('#revisionInfoRequired').is(':checked')) {
+            $('#revisionInfoEnabled').prop("disabled", true);
+        }
+
+    });
+
+    var binMessage = "Changing Bin location format  on settings info will reset all Bin Locations to null. "
+    function promptSave() {
+        if(bCancel == false) {
+            var noteText = $("#textarea-id").val()
+            var illegalChars = noteText.includes("^") ||
+                noteText.includes("&") ||
+                noteText.includes("=") ||
+                noteText.includes("{") ||
+                noteText.includes("}") ||
+                noteText.includes("[") ||
+                noteText.includes("]") ||
+                noteText.includes("/") ||
+                noteText.includes("|") ||
+                noteText.includes("?") ||
+                noteText.includes("'") ||
+                noteText.includes('"') ||
+                noteText.includes("\\") ||
+                noteText.includes("`") ||
+                noteText.includes("~") ||
+                noteText.includes("+");
+
+            if (illegalChars) {
+                populateCharsError()
+                return false
+            } else {
+                clearContainer("illegalCharactersError")
+                saveEditChanges()
+            }
+        } else {
+            clearContainer("illegalCharactersError")
+            saveEditChanges()
+        }
+    }
+
+    function saveEditChanges() {
+        var newBin = document.manufacturerForm['binLocationFormat'].value;
+
+        if(newBin !== oldBin) {
+            alert(binMessage)
+            $("#binLocationStatusId").val("true");
+        }
+        doSave();
+        return true;
+    }
+
+    function populateCharsError() {
+        var errorMessage = "Invalid characters in SOF Message field"
+        var messages = []
+        messages.push(errorMessage)
+        showValidation("illegalCharactersError", messages)
+    }
+
+    $(document).ready(function () {
+        var oldBin = document.manufacturerForm['binLocationFormat'].value;
+        $('#open_holidays_modal').click(function () {
+            $(window).unbind("beforeunload");
+        });
+
+        document.getElementById('textarea-id').setAttribute('maxlength', '150');
+
+        makeAjaxCall("../manufacturerData", {id : "0", shipmentVals:"1"},
+            function(data){
+            for(let i=0; i< data.length;i++) {
+                let key =data[i].key
+                let label = data[i].label
+                let value=data[i].value
+                let selector = "#" + key
+                const domContainer = document.querySelector(selector);
+                ReactDOM.render(e(CheckBox, {
+                    label: label,
+                    checked: value,
+                    name: key,
+                    id: key,
+                    for: key
+
+                }), domContainer);
+            }
+                initial_form_state = $('#manufacturer_form').serialize();
+
+                var showOldOrderItemColumnsCheckbox = $('#showOldOrderItemColumns');
+
+                if($('#showOldOrderItemColumnsVal').val() === 'true') {
+                    showOldOrderItemColumnsCheckbox.click();
+                }
+
+                if($('#priceListOrCapChargeRequired input').prop('checked')) {
+                    if(!showOldOrderItemColumnsCheckbox.prop('checked')) {
+                        showOldOrderItemColumnsCheckbox.click();
+                    }
+                    showOldOrderItemColumnsCheckbox.prop('disabled',true);
+                } else {
+                    showOldOrderItemColumnsCheckbox.prop('disabled',false);
+                }
+
+                $('#priceListOrCapChargeRequired input').off().on('click',function () {
+                    if($(this).prop('checked')) {
+                        if(!showOldOrderItemColumnsCheckbox.prop('checked')) {
+                            showOldOrderItemColumnsCheckbox.click();
+                        }
+                        showOldOrderItemColumnsCheckbox.prop('disabled',true);
+
+                    } else {
+                        showOldOrderItemColumnsCheckbox.prop('disabled',false);
+                    }
+                });
+
+                showOldOrderItemColumnsCheckbox.off().on('click',function () {
+                    if($(this).prop('checked')) {
+                        $('#showOldOrderItemColumnsVal').val("true");
+                    } else {
+                        $('#showOldOrderItemColumnsVal').val("false");
+                    }
+                })
+            })
+
+
+
+        // Store form state at page load
+        var initial_form_state = $('#manufacturer_form').serialize();
+
+        // Store form state after form submit
+        $('#manufacturer_form').submit(function(){
+            initial_form_state = $('#manufacturer_form').serialize();
+        });
+
+       // Check form changes before leaving the page and warn user if needed
+        $(window).bind('beforeunload', function(e) {
+            var form_state = $('#manufacturer_form').serialize();
+            if(initial_form_state != form_state){
+                var message = "You have unsaved changes on this page. Do you want to leave this page and discard your changes or stay on this page?";
+                e.returnValue = message; // Cross-browser compatibility (src: MDN)
+                return message;
+            }
+        });
+
+        var holidays = '';
+        console.log("holiday dates: " + holidays);
+
+        $("#open_holidays_modal").click(function() {
+           $("#manufacturer_id").val('0')
+        });
+        $("#selectedHolidays").val(holidays);
+
+        $("div.errors").hide();
+        $("div.errors").eq(0).show();
+
+        $(".pagelinks").find("a").each(function (index) {
+            var link = $(this);
+            var pageBanner = link.parent().parent();
+            var table = pageBanner.siblings(".webops-datatable");
+            var id = table.attr("id")
+            var page = link.attr("href");
+            page += "&tableName=" + id;
+            var href = "javascript:newPage('" + page + "')"
+            link.attr("href", href);
+        })
+        $(".signatureCheckbox").click(function () {
+            if ($(".signatureCheckbox").is(":checked")) {
+                $(".signatureFormCheckBox").prop("disabled", false);
+                $("#signatureFormSpan").removeClass("disabled");
+            } else {
+                $(".signatureFormCheckBox").prop("disabled", true);
+                $("#signatureFormSpan").addClass("disabled");
+            }
+        });
+
+        if ($('#strongPswd').attr('checked')) {
+            $("#securityOpts").show();
+        } else {
+            $("#securityOpts").hide();
+        }
+
+        $('#revisionInfoEnabled').change(function () {
+            if ($('#revisionInfoEnabled').is(':checked')) {
+                $('#revisionInfoRequired').prop("disabled", false);
+            }
+            else {
+                $('#revisionInfoRequired').prop("disabled", true);
+            }
+            $("#manufacturerRevisedChoicesPanel").collapse('toggle');
+        });
+
+        if ($('#revisionInfoEnabled').attr('checked')) {
+            $("#manufacturerRevisedChoicesPanel").collapse('show');
+        }
+
+
+        $(".ckbxmultigs1").multiselect({
+            noneSelectedText: "No AIs selected",
+            selectedText: "# AIs selected",
+            selectedList: 1
+        });
+
+        $("#manufacturerUserPermissions").multiselect({
+            noneSelectedText: "None selected",
+            selectedText: "# selected",
+            selectedList: 1
+        });
+
+        function hideSubSettings() {
+            var accessToReplenShipMethodsDisabled = true;
+            var caseIdentifierRequirementDisabled = true;
+            var manufacturerCaseIdNameDisabled = true;
+            var revisionInfoDisabled = !$('#revisionInfoEnabled').attr('checked');
+            var shipMethodAtItemLevelDisabled = true;
+
+            var subSettings = $(".collapsible");
+            subSettings.each(function () {
+                var subSetting = $(this);
+                var parent = subSetting.attr('parent');
+                switch (parent) {
+                    case 'accessToReplenShipMethods':
+                        if (accessToReplenShipMethodsDisabled) {
+                            subSetting.find('.td').slideUp();
+                        }
+                        break;
+                    case 'caseIdentifier':
+                        if (caseIdentifierRequirementDisabled) {
+                            subSetting.find('.td').slideUp();
+                        }
+                        break;
+                    case 'caseIdName':
+                        if (manufacturerCaseIdNameDisabled) {
+                            subSetting.find('.td').slideUp();
+                        }
+                        break;
+                    case 'revisionInfo':
+                        if (revisionInfoDisabled) {
+                            subSetting.find('.td').slideUp();
+                        }
+                        break;
+                    case 'shipMethodAtItemLevel':
+                        if (shipMethodAtItemLevelDisabled) {
+                            subSetting.find('.td').slideUp();
+                        }
+                        break;
+                }
+            });
+        }
+
+        hideSubSettings();
+
+        if(!$('#allowKitRestockChkbox').prop('checked')){
+            $('#defaultRestockDiv').slideUp();
+        }
+
+        $('#allowKitRestockChkbox').off().on('click',function(){
+            if(!$('#allowKitRestockChkbox').prop('checked')){
+                $('#defaultRestockDiv').slideUp();
+                $('#defaultRestockChkbox').prop('checked',false);
+            }else{
+                $('#defaultRestockDiv').slideDown();
+            }
+        });
+        var splitStringHolidays = holidays.split(",");
+        var holidayDateArray = [];
+        for(var i = 0; i < splitStringHolidays.length; i++) {
+            var dateParts = splitStringHolidays[i].split("-");
+            holidayDateArray.push(new Date(dateParts[0], dateParts[1] - 1, dateParts[2]));
+        }
+
+        // create Calendar from div HTML element
+        $("#holiday_calendar").kendoCalendar({
+            selectable: "multiple",
+            selectDates: holidayDateArray,
+            disableDates: function disableDates(date) {
+                if (date) {
+                    var day = date.getDay();
+                    //var isWeekend = (day === 6) || (day === 0);
+
+                    if (compareDates(date, holidayDateArray)) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            },
+            format: dateFormat
+        });
+
+        $("#holiday_calendar").on("mousedown", "td", function (e) {
+            // use "touchstart" for touch devices: $("#calendar").on("touchstart", "td", function (e) {
+
+            // get item if the user clicked on an item template
+            var clickedItem = $(e.target).closest("td[role='gridcell']");
+
+            // prevent click event for item elements
+            clickedItem.on("click", function (e) {
+                //use "touchend" for touch devices: clickedItem.on("touchend", function (e) {
+
+                e.stopPropagation();
+                e.preventDefault();
+            });
+
+            if (clickedItem.length > 0) {
+                var calendar = $("#holiday_calendar").getKendoCalendar();
+                var clickedDate = kendo.calendar.toDateObject(clickedItem.children("a"));
+
+                var selectedDates = calendar.selectDates();
+
+                if (clickedItem.hasClass("k-state-selected")) {
+                    // if date is already selected - remove it from collection
+                    selectedDates = $.grep(selectedDates, function (item, index) {
+                        return clickedDate.getTime() !== item.getTime();
+                    });
+                } else {
+                    selectedDates.push(clickedDate);
+                }
+
+
+                calendar.selectDates(selectedDates);
+            }
+            var latestSelectedDates = $("#holiday_calendar").getKendoCalendar().selectDates();
+            if(latestSelectedDates.length <= 0) {
+                $("#selectedHolidays").val("");
+            }
+            var currentValue = $("#selectedHolidays").val();
+            for(var i = 0; i < latestSelectedDates.length; i++) {
+                var formattedDate = kendo.toString(latestSelectedDates[i], dateFormat);
+                if (currentValue.length > 0 && currentValue.indexOf(formattedDate) == -1) {
+                    currentValue = currentValue + "," + formattedDate;
+                } else {
+                    currentValue = formattedDate;
+                }
+                $("#selectedHolidays").val(currentValue);
+            }
+        });
+
+
+        function compareDates(date, dates) {
+            for (var i = 0; i < dates.length; i++) {
+                if (dates[i].getDate() == date.getDate() &&
+                    dates[i].getMonth() == date.getMonth() &&
+                    dates[i].getYear() == date.getYear()) {
+                    return true
+                }
+            }
+        }
+
+        $("#workweek_selection").multiselect({
+            noneSelectedText: "Select Days",
+            selectedText: "# days selected",
+            selectedList: 1
+        });
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../resource/js/inlineForm.webops24.10.9.500.js"></script>
+
+<form name="manufacturerRevisedChoiceForm" id="MRCForm" method="post" action="/do/manufacturerRevisedChoiceSave">
+<input type="hidden" name="id" value="javascript:arcId" id="MRCId">
+<input type="hidden" name="manufacturerId" value="javascript:arcId" id="MRCMfgrId">
+<input type="hidden" name="submit" id="submit" />
+<input type="hidden" name="rieck" id="rieck" value="checked" />
+    <div class="modal fade" id="manufacturerRevisedChoiceModal" tabindex="-1" role="dialog" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h1>Procedure Type Edit</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="required-field">Name</label>
+                        <input type="text" name="name" maxlength="15" value="" id="MRCName" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="active" value="on" id="MRCActive" class="form-control">
+                        <label>Active</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary" onclick="doInlineSubmit('../do/manufacturerRevisedChoiceSave','#MRCForm', '#MRCTable')">Save</a>
+                        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-default" >Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function updateHolidayCalendar(html) {
+        var updatedHolidays = html.find("#selectedHolidays").val();
+
+        console.log("Updated Holidays: " + updatedHolidays);
+
+        $("#selectedHolidays").val(updatedHolidays);
+
+        var holidayCalendar = $("#holiday_calendar").data('kendoCalendar');
+
+        var splitStringHolidays = updatedHolidays.split(",");
+        var holidayDateArray = [];
+        for(var i = 0; i < splitStringHolidays.length; i++) {
+            var dateParts = splitStringHolidays[i].split("-");
+            holidayDateArray.push(new Date(dateParts[0], dateParts[1] - 1, dateParts[2]));
+        }
+        holidayCalendar.selectDates(holidayDateArray);
+        var options = holidayCalendar.options;
+        options.disableDates = holidayDateArray;
+        holidayCalendar.destroy();
+        $('#holiday_calendar').html('');
+        $('#holiday_calendar').kendoCalendar(options);
+
+    }
+
+    function disableDates(date, holidayDateArray) {
+        if (date) {
+            var day = date.getDay();
+            //var isWeekend = (day === 6) || (day === 0);
+
+            if (compareDates(date, holidayDateArray)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
+    function compareDates(date, dates) {
+        for (var i = 0; i < dates.length; i++) {
+            if (dates[i].getDate() == date.getDate() &&
+                dates[i].getMonth() == date.getMonth() &&
+                dates[i].getYear() == date.getYear()) {
+                return true
+            }
+        }
+    }
+
+
+    function deleteHoliday(holidayId) {
+        doInlineSubmit('../do/workdayCalendarSave?id=' + holidayId, '#workdayCalendarForm', 'workdayCalendarDiv', '', 'true', updateHolidayCalendar);
+    }
+    $(document).ready(function () {
+
+        $(".save_holidays").click(function(e) {
+            e.preventDefault();
+            doInlineSubmit('../do/workdayCalendarSave', '#workdayCalendarForm', 'workdayCalendarDiv', '', 'true', updateHolidayCalendar);
+            $("#workday_calendar_modal").modal("hide");
+        });
+    });
+</script>
+<div class="container">
+    <div class="row">
+        <form name="workdayCalendarForm" id="workdayCalendarForm" method="post" action="/do/workdayCalendarSave">
+            <input type="hidden" name="manufacturerId" value="" id="manufacturer_id">
+            <div class="modal fade" id="workday_calendar_modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h1>Holidays</h1>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <div id="holiday_calendar"></div>
+                                <input type="hidden" name="holidays" value="" id="selectedHolidays">
+                            </div>
+                            <div class="webops-datatable-wrapper" id="workdayCalendarDiv">
+                                
+<table class="webops-datatable dstable" id="row">
+<thead>
+<tr>
+<th class="col-xs-4">Date</th>
+<th class="col-xs-4">Action</th></tr></thead>
+<tbody><tr class="empty"><td colspan="2">Nothing found to display.</td></tr></tbody></table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-lg btn-primary save_holidays"><i class="glyphicon glyphicon-floppy-disk"></i>Save</button>
+                                <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-lg btn-default"><i
+                                        class="glyphicon glyphicon-remove"></i>Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+/**
+* This function will display validation messages within the passed in container. The
+* messages are formatted as the old struts pages are for consistency purposes
+* @containerId -  the id of the container we want to add the messages to
+* @messages - the validation messages
+*/
+function showValidation(containerId,  messages) {
+    var messageArray = []
+    if(typeof messages == "string"){
+      messageArray.push(messages)
+    }
+    else{
+        messageArray = messages
+    }
+
+    var validationHeader = "Validation Messages"
+    var container = $("#" + containerId)
+    clearContainer(containerId)
+    var html = "<div class='errors'><h3><span class='errors'>" + validationHeader + "</span></h3>"
+    if (messageArray.length > 0) {
+        html += "<ul>"
+        for (i = 0; i < messageArray.length; i++) {
+            html += "<li>" + messageArray[i] + "</li>"
+
+        }
+        html += "</ul></div>"
+        container.prepend($(html))
+
+    }
+}
+
+function clearContainer(containerId){
+    var container = $("#" + containerId)
+    container.empty()
+
+}
+
+function isValidPhone(phoneNumber){
+    var valid = true
+    var match = /[\s\s0-9\.\+\-\(\)]+/
+    phoneNumber = phoneNumber.trim();
+    var phoneNumberLength = phoneNumber.length
+    if(phoneNumberLength < 7 || phoneNumberLength > 25){
+        valid =false;
+    }
+    else if(phoneNumber){
+        var phoneMatch = phoneNumber.match(match)
+         valid= phoneMatch!=null && phoneMatch[0].length ==phoneNumberLength
+    }
+
+    return valid
+}
+</script>
+
+
+
+<div class="container">
+    <div class="row">
+
+        
+        <form name="manufacturerForm" id="manufacturer_form" method="post" action="/do/manufacturerSave" enctype="multipart/form-data" onsubmit="return promptSave()">
+            <input type="hidden" name="id" value="0" id="mfgrId">
+            <input type="hidden" name="binLocationStatus" value="" id="binLocationStatusId">
+            <input type="hidden" name="showOldOrderItemColumns" value="false" id="showOldOrderItemColumnsVal">
+
+            <div class="row">
+                <div id="illegalCharactersError"/>
+                <div class="col-sm-10">
+                    <h1>Manufacturer Edit</h1>
+            </div>
+            <div class="col-sm-2 text-right">
+                <a href="../do/manufacturerHistoryList?id=0" class="btn btn-default btn-lg btn-block" disabled=&#039;disabled&#039;>
+                    <i class="glyphicon glyphicon-time"></i> History
+                </a>
+                <br/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label>
+                    Manufacturer Name *
+                    <span class="sublabel">(40 characters or less.)</span>
+                </label>
+                <input type="text" name="name" maxlength="40" value="" class="form-control">
+            </div>
+            <div class="form-group col-sm-6">
+                <label>
+                    Manufacturer Case ID Name
+                    <span class="sublabel">(20 characters or less.)</span>
+                </label>
+                <input type="text" name="caseIdName" maxlength="20" value="" class="form-control">
+            </div>
+            <div class="form-group col-sm-6">
+                <label>
+                    Manufacturer ERP Code
+                    <span class="sublabel">(40 characters or less.)</span>
+                </label>
+                <input type="text" name="erpCode" maxlength="40" value="" class="form-control">
+            </div>
+            <div class="form-group col-sm-6">
+                <label>
+                    Manufacturer Case Attribute Name
+                    <span class="sublabel">(50 characters or less.)</span>
+                </label>
+                <input type="text" name="caseAttribute" maxlength="50" value="Manufacturer Case Attribute" class="form-control">
+            </div>
+        </div>
+
+        <div class="panel-group accordion" id="manufacturerEditAccordion" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-default" id="settingsPanel">
+                <a role="button" data-toggle="collapse" href="#settingsEditCollapse0" aria-expanded="false"
+                   aria-controls="settingsEditCollapse0">
+                    <div class="panel-heading" role="tab" id="settingsEditHeading0">
+                        <span class="panel-title">Manufacturer Profile</span>
+                    </div>
+                </a>
+
+                <div id="settingsEditCollapse0" class="panel-collapse collapse" role="tabpanel" aria labeledby="settingsEditHeading0">
+                    <div class="panel-body">
+                        <div class="col-lg-2"></div>
+                        <div class="col-md-12 col-lg-8">
+                            <div class="row">
+                                <div class="form-group col-md-6" id="accessToReplenShipMethods">
+                                    <input type="checkbox" name="accessToReplenShipMethodsEnabled" value="on" class="form-control">
+                                    <label class="full-width-minus-60">Access to Replenishment Shipping Methods - Manufacturer Admin Only</label>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="checkbox" name="shipMethodAtItemLevelEnabled" value="on" class="form-control">
+                                    <label class="full-width-minus-60">Ship Method at Item Level</label>
+                                </div>
+                            </div>
+                            <div class="form-group row" id="caseIdentifier">
+                                <hr>
+                                <div class="col-md-6">
+                                    <input type="checkbox" name="caseIdentifierRequirementEnabled" value="on" class="form-control">
+                                    <label class="full-width-minus-60">Case Identifier Requirement</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Activation Date</label>
+                                    
+                                    
+                                        
+                                    
+                                    <input type="text" name="strCaseIdentifierActivationDate" size="20" tabindex="-1" value="" onfocus="this.blur();" id="CaseIdDateTime" style="text-transform:uppercase;background-color:#cccccc;color:grey;text-decoration:line-through;" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row" id="caseIdName">
+                                <div class="col-md-6">
+                                    <input type="checkbox" name="caseIdNameEnabled" value="on" class="form-control">
+                                    <label class="full-width-minus-60">Manufacturer Case ID Required</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Activation Date</label>
+                                    
+                                    
+                                        
+                                    
+                                    <input type="text" name="strCaseIdNameActivationDate" size="20" tabindex="-1" value="" onfocus="this.blur();" id="CaseIdDateTime" style="text-transform:uppercase;background-color:#cccccc;color:grey;text-decoration:line-through;" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row" id="revisionInfo">
+                                <div class="col-xs-12" id="revision-info-options">
+                                    <hr>
+                                    <div class="form-group row">
+                                        <div class="col-md-6">
+                                            <input type="checkbox" name="revisionInfoEnabled" value="on" id="revisionInfoEnabled" class="form-control">
+                                            <label class="full-width-minus-60">Revision Information</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Activation Date</label>
+                                            
+                                            
+                                                
+                                            
+                                            <input type="text" name="strRevisionInfoActivationDate" size="20" tabindex="-1" value="" onfocus="this.blur();" id="CaseIdDateTime" style="text-transform:uppercase;background-color:#cccccc;color:grey;text-decoration:line-through;background-color:#cccccc;" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" name="revisionInfoRequired" value="on" onclick="toggleRevision()" id="revisionInfoRequired" class="form-control">
+                                        <label class="full-width-minus-60">Revision Information Required</label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="checkbox" name="showWarningMessage" value="on" class="form-control">
+                                        <label>Revision Information Warning Message</label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Revision Information Warning Message Text</label>
+                                        <textarea name="warningMessageText" id="Setting" class="form-control"></textarea>
+
+                                    </div>
+
+                                </div>
+                                
+                                    <div class="col-xs-12">
+                                        <hr>
+                                        <div class="form-group">
+                                            <label>Logo</label>
+                                            <input type="file" name="logoFile" value="" class="textinput">
+                                        </div>
+
+                                        
+
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+                <div class="panel panel-default collapse" id="manufacturerRevisedChoicesPanel">
+                    <a role="button" data-toggle="collapse" href="#settingsEditCollapse1" aria-expanded="true"
+                       aria-controls="settingsEditCollapse1">
+                        <div class="panel-heading" role="tab" id="settingsEditHeading1">
+                            <span class="panel-title">Procedure Type Choices</span>
+                        </div>
+                    </a>
+
+                    <div id="settingsEditCollapse1" class="panel-collapse collapse" role="tabpanel" aria labeledby="settingsEditHeading1">
+                        <div class="webops-datatable-wrapper">
+                            <div class="pagebanner ">
+                                <div class="padded text-right">
+                                    
+
+                                    <a href="#" onclick="addMRC()" data-toggle="modal" data-target="#manufacturerRevisedChoiceModal" class="btn btn-default">
+                                        <i class="glyphicon glyphicon-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <table class="webops-datatable" id="MRCTable">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Active</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="panel panel-default" id="localizationPanel">
+                <a data-toggle="collapse" data-parent="#localizationPanel" href="#branchEditCollapse3" aria-expanded="false" aria-controls="branchEditCollapse3">
+                    <div class="panel-heading" role="tab" id="branchEditHeading3">
+                        <h4 class="panel-title">
+                            Localization
+                        </h4>
+                    </div>
+                </a>
+
+                <div id="branchEditCollapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="branchEditHeading3">
+                    <div class="panel-body">
+                        <div class="col-lg-2"></div>
+                        <div class="col-md-12 col-lg-8">
+                            <div class="row">
+                                <div class="col-sm-5 form-group">
+                                    <div class="form-group">
+                                        <label for="timeZone">Variant</label>
+
+                                        <input type="hidden" name="i18nVariant" value="STR">
+                                        <input type="text" name="i18nVariant" value="STR" disabled="disabled" class="form-control">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-5"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <a role="button" data-toggle="collapse" href="#settingsEditCollapse2" aria-expanded="true"
+                   aria-controls="settingsEditCollapse2">
+                    <div class="panel-heading" role="tab" id="settingsEditHeading2">
+                        <span class="panel-title">Settings Info</span>
+                    </div>
+                </a>
+
+                <div id="settingsEditCollapse2" class="panel-collapse collapse" role="tabpanel" aria labeledby="settingsEditHeading2">
+                    <div class="panel-body">
+                        <div class="col-lg-2"></div>
+                        <div class="col-md-12 col-lg-8">
+                            <div class="form-group col-md-12">
+                                <label>No Lot Code Value</label>
+                                <label class="sublabel">Default value is NO_LOTCODE</label>
+                                <input type="hidden" name="noLotCodeValue" value="">
+                                <input type="text" name="noLotCodeValue" maxlength="40" value="" disabled="disabled" class="form-control">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Arrive By Days Prior To Surgery Date</label>
+                                <label class="sublabel">Minimum 0. Maximum 180.</label>
+                                <input type="text" name="arriveByDaysPriorToSurgeryDate" maxlength="3" value="3" class="form-control">
+                            </div>
+                            
+                                    <input type="hidden" name="allowAlternativeLoanerBanks" value="false">
+                                
+                            <div class="form-group col-md-6">
+                                <div><span style="font-weight:bold;font-size:12px">
+                                    Bin Location Format
+                                </span>
+                                </div>
+
+                                 <div>
+                                     <input type="radio" name="binLocationFormat" value="0" checked="checked" style="margin-right: 7px">15-character max. No separators required.
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="binLocationFormat" value="1" style="margin-right: 7px">Four levels. Three characters each. Dot or dash separators.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="checkbox" name="allowControlledQuantityReceiving" value="on" class="form-control">
+                                <label>Allow Quantity Receiving for Lot Controlled Items</label>
+                            </div>&nbsp;
+                            <div class="form-group col-md-12">
+                                <input type="checkbox" name="tempKitEnabled" value="on" class="form-control">
+                                <label>Allow temp kits from loaner banks</label>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <input type="checkbox" name="allowKitRestockAtCheckIn" value="on" id="allowKitRestockChkbox" class="form-control">
+                                <label>Allow Restock at Kit Check In</label>
+                            </div>
+                            
+                            <div class="form-group col-md-12">
+                                <input type="checkbox" name="allowScanQuantityForKitEdit" value="on" id="allowScanQuantityChkbox" class="form-control">
+                                <label>Allow Scan Quantity for Kit Edit - Items</label>
+                            </div>
+
+                            <div class="form-group col-md-6" id="defaultRestockDiv">
+                                <input type="checkbox" name="defaultRestockToSelectAll" value="on" id="defaultRestockChkbox" class="form-control">
+                                <label>Default Restock to Select All</label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <a role="button" data-toggle="collapse" href="#settingsEditCollapse3" aria-expanded="true"
+                   aria-controls="settingsEditCollapse3">
+                    <div class="panel-heading" role="tab" id="settingsEditHeading3">
+                        <span class="panel-title">Security Option</span>
+                    </div>
+                </a>
+
+                <div id="settingsEditCollapse3" class="panel-collapse collapse" role="tabpanel" aria labeledby="settingsEditHeading3">
+                    <div class="panel-body">
+                        <div class="col-lg-2"></div>
+                        <div class="col-md-12 col-lg-8">
+                            <div class="form-group">
+                                <label>Maximum Failed Login Attempts</label>
+                                <input type="text" name="maxFailedLoginAttempts" maxlength="3" size="3" value="0" id="maximumNumberOfAllowedFailedAttempts" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="checkbox" name="useStrongPswd" value="true" onclick="return confirmStrongPswd(this);" id="strongPswd" class="form-control">
+                                <label>Strong Password</label>
+                            </div>
+                            <div id="securityOpts">
+                                <div class="form-group col-md-12">
+                                    <label>Password Expiration</label>
+                                    
+                                    <select name="pswdExpiresDays" class="form-control"><option value="90">90</option>
+<option value="120">120</option></select>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label>Password Expiration Warning Duration</label>
+                                    <input type="text" name="pswdExpiresWarnDays" maxlength="3" size="3" value="0" class="form-control">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <a role="button" data-toggle="collapse" href="#settingsEditCollapse4" aria-expanded="true"
+                   aria-controls="settingsEditCollapse4">
+                    <div class="panel-heading" role="tab" id="settingsEditHeading4">
+                        <span class="panel-title">Transfer</span>
+                    </div>
+                </a>
+
+                <div id="settingsEditCollapse4" class="panel-collapse collapse" role="tabpanel" aria labeledby="settingsEditHeading4">
+                    <div class="panel-body">
+                        <div class="col-lg-2"></div>
+                        <div class="col-md-12 col-lg-8">
+                            <h3>Inter Branch Item Transfer</h3>
+
+                            <div class="form-group">
+                                <label>Transfer Items to destination Branch on</label>
+                                <select name="interBranchTransferEvent" class="form-control"><option value="1">Shipping<!-- Shipping --></option>
+                                    <option value="2">Receiving<!-- Receiving --></option></select>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="prefixTransferKitsNew" value="on" class="form-control">
+                                <label>Prefix Inter Branch Transfer Kits as New</label>
+                            </div>
+                            <h3>Manufacturer Return</h3>
+
+                            <div class="form-group">
+                                <label>Transfer Items to destination Branch on</label>
+                                <select name="returnTransferEvent" class="form-control"><option value="1">Shipping<!-- Shipping --></option>
+                                    <option value="2">Receiving<!-- Receiving --></option></select>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="autoGenerateRMA" value="on" class="form-control">
+                                <label>Auto Generate Return Notification Authorization Number</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="requireReturnReceipt" value="on" class="form-control">
+                                <label>Always Require Receipt of Returns</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <a role="button" data-toggle="collapse" href="#settingsEditCollapse5" aria-expanded="true"
+                   aria-controls="settingsEditCollapse5">
+                    <div class="panel-heading" role="tab" id="settingsEditHeading5">
+                        <span class="panel-title">Manufacturer Preference</span>
+                    </div>
+                </a>
+
+                <div id="settingsEditCollapse5" class="panel-collapse collapse" role="tabpanel" aria labeledby="settingsEditHeading5">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-offset-2">
+                                <label>Signature Capture</label>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-md-offset-2">
+
+                                <div class="form-group">
+                                    <input type="checkbox" name="signatureCaptureAccountRep" value="on" class="signatureCheckbox form-control">
+                                    <label>Account</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="signatureCaptureSalesRep" value="on" class="signatureCheckbox form-control">
+                                    <label>Sales Representative</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+
+                                
+                                <div class="form-group">
+                                    <input type="checkbox" name="showSignaturesOnSEF" value="on" disabled="disabled" class="signatureFormCheckBox form-control">
+                                    <label>Show Signatures on SEF</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="showSignaturesOnSOF" value="on" disabled="disabled" class="signatureFormCheckBox form-control">
+                                    <label>Show Signatures on SOF</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4 col-md-offset-2">
+                                <div class="form-group">
+                                    <input type="checkbox" name="orderItemShipMethodRequired" value="on" class="form-control">
+                                    <label>Order Detail - Ship Method Required</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <input type="checkbox" name="showPOHyperlinkOnSOF" value="on" class="form-control">
+                                    <label>Show PO Hyperlink on SOF</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="allowSOFMultiselect" value="on" class="form-control">
+                                    <label>Allow SEF / SOF - Companies Multi-select</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-xs-12 col-md-4 col-md-offset-2">
+                                <div class="form-group">
+                                    <div id="shipPriorityRequired"></div>
+                                   </div>
+                                <div></div>
+                                <div class="form-group">
+                                    <div id="priceListOrCapChargeRequired"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" class="form-control" id="showOldOrderItemColumns"/>
+                                    <label>Order Detail - Show Price List, Cap Charge, Upcharge</label>
+                                </div>
+                                <div></div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="showCaseIdNameOnCaseEmails" value="on" class="form-control">
+                                    <label>Show Manufacturer Case ID on Case Emails</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="kitsAssignableProcessStatusReadyOnly" value="on" class="form-control">
+                                    <label>Kits Assignable - Process Status Ready Only</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="kitFamilyAliasRequired" value="on" id="kitFamilyAliasRequired" class="form-control">
+                                    <label for="kitFamilyAliasRequired">Kit Family Alias Required </label>
+                                </div>
+                                
+                                <input type="hidden" name="showAvailabilityButtonPostCaseStep3" value="false">
+                                <input type="hidden" name="allowSurgeryDateEditOnAvailibilityCaseDetail" value="false">
+                                <input type="hidden" name="showMobileAvailabilityProcedureEdit" value="false">
+
+                            
+                            <div class="form-group">
+                                <input type="checkbox" name="confirmInstrumentSubmission" value="on" id="confirmInstrumentSubmission" class="form-control">
+                                <label for="confirmInstrumentSubmission">Order Detail - Confirm Instrument Submission </label>
+                            </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-4 ">
+                                <div class="form-group"><label>SOF Message</label>
+                                    <textarea name="sofMessageText" rows="10" id="textarea-id" class="form-control"></textarea>
+                                </div>
+                                <div></div>
+                                <div class="form-group"><label>Case - Primary Invoice Default</label>
+                                    <select name="primaryInvoiceDefaultId" class="form-control"><option value="1" selected="selected">Hospital</option>
+<option value="2">Insurance Company</option>
+<option value="3">COD</option></select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Case Edit Restrictions</label>
+                                    <select name="manufacturerUserPermissions" multiple="multiple" id="manufacturerUserPermissions" class="form-control"><option value="1">Case Type</option>
+                                        
+                                            <option value="2">Case Status</option>
+                                        
+                                            <option value="3">Surgery Date Slider (Web App)</option>
+                                        
+                                            <option value="4">Surgery Time Slider (Web App)</option>
+                                        
+                                            <option value="5">Surgery Date (Mobile App)</option>
+                                        
+                                            <option value="6">Surgery Time (Mobile App)</option>
+                                        
+                                            <option value="7">Sales Representative</option>
+                                        
+                                            <option value="16">Hospital</option>
+                                        
+                                            <option value="8">Physician</option>
+                                        
+                                            <option value="9">Procedure</option>
+                                        
+                                            <option value="10">Case Identifier</option>
+                                        
+                                            <option value="17">Gender</option>
+                                        
+                                            <option value="11">Date of Birth</option>
+                                        
+                                            <option value="12">Age</option>
+                                        
+                                            <option value="13">Special Instructions (Web  App)</option>
+                                        
+                                            <option value="14">Notes (Mobile App)</option>
+                                        
+                                            <option value="18">Hospital Purchase Order</option>
+                                        
+                                            <option value="19">Manufacturer Case ID Name</option>
+                                        
+                                            <option value="15">Price</option>
+                                        
+                                            <option value="20">Case Approval</option>
+                                        
+                                            <option value="21">Schedule Case Coverage</option>
+                                        
+                                            <option value="22">Revision Information</option>
+                                        
+                                            <option value="23">Robot Assisted</option></select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <script src="../resource/js/components/out/checkbox.webops24.10.9.500.js"></script>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <a role="button" data-toggle="collapse" href="#settingsEditCollapse6" aria-expanded="true"
+                   aria-controls="settingsEditCollapse6">
+                    <div class="panel-heading" role="tab" id="settingsEditHeading6">
+                        <span class="panel-title">Barcode Settings</span>
+                    </div>
+                </a>
+
+                <div id="settingsEditCollapse6" class="panel-collapse collapse" role="tabpanel" aria labeledby="settingsEditHeading6">
+                    <div class="panel-body">
+                        <div class="row">
+
+                            <div class="col-xs-12 col-md-4 col-md-offset-2">
+                                <div class="form-group">
+                                    <input type="checkbox" name="useSerialNumberAsLotCode" value="on" class="form-control">
+                                    <label>Serial Number as Lot Code</label>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label>GS1 AIs</label>
+                                        
+                                    <select name="gs1AIs" multiple="multiple" class="ckbxmultigs1"><option value="01">01</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="17">17</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="91">91</option>
+                                        <option value="92">92</option>
+                                        <option value="93">93</option>
+                                        <option value="94">94</option>
+                                        <option value="95">95</option>
+                                        <option value="96">96</option>
+                                        <option value="97">97</option>
+                                        <option value="98">98</option>
+                                        <option value="99">99</option>
+                                        <option value="240">240</option>
+                                        <option value="241">241</option></select>
+                                        
+                                </div>
+                            </div>
+
+                                
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <a role="button" data-toggle="collapse" href="#settingsEditCollapse7" aria-expanded="true"
+                   aria-controls="settingsEditCollapse7">
+                    <div class="panel-heading" role="tab" id="settingsEditHeading7">
+                        <span class="panel-title">Mobile App Batch Sizes</span>
+                    </div>
+                </a>
+
+                <div id="settingsEditCollapse7" class="panel-collapse collapse" role="tabpanel" aria labeledby="settingsEditHeading7">
+                    <div class="panel-body">
+                        <div class="row">
+
+                            <div class="col-xs-12 col-md-4 col-md-offset-2">
+                                <div class="form-group">
+                                    <label>Hospital Prices</label>
+                                    <input type="text" name="hospitalPriceBatchSize" value="10000" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Par Settings</label>
+                                    <input type="text" name="parSettingBatchSize" value="10000" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-4">
+                                <div class="form-group">
+                                    <label>Master Parts File</label>
+                                    <input type="text" name="masterPartsFileBatchSize" value="4000" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Inventory Count</label>
+                                    <input type="text" name="inventoryCountPostBatchSize" value="300" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div id="submitButtons" class="col-xs-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 text-center">
+                <button type="submit" class="btn btn-primary btn-lg" value="save">
+                    <i class="glyphicon glyphicon-floppy-disk"></i>Save</button>
+                <button type="submit" class="btn btn-default btn-lg" name="org.apache.struts.taglib.html.CANCEL" value="cancel" onclick="bCancel=true">
+                    <i class="glyphicon glyphicon-remove"></i>Cancel</button>
+            </div>
+            <div class="col-sm-4">&nbsp;</div>
+        </div>
+
+
+    </div>
+    </form>
+</div>
+
+
+<!-- End manufacturerForm -->
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+<div class="footer col-xs-12" id="footer">
+    <div><a href="#" id="viewDesktopLink" class="showDesktopVersion footer">Show Desktop Version</a></div>
+    <div>v2.5 - Build 24.10.9.500</div>
+    <div><a href="http://www.webops.com/">www.webops.com</a> | &copy; 2024 WebOps, LLC.</div>
+</div>
+<script type="text/javascript">
+    var isMobile = false;
+    // device detection
+    if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
+        || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4))) {
+        isMobile = true;
+    }
+    if(!isMobile){
+        $('#viewDesktopLink').hide();
+    }
+    var desktopBreakpoint = 1200;
+    $('#viewDesktopLink').click(function(e) {
+        e.preventDefault();
+        if($('#viewDesktopLink').text() === "Show Desktop Version"){
+            $('#viewDesktopLink').text("Show Mobile Version");
+            $('meta[name="viewport"]').attr('content', 'width=' + desktopBreakpoint );
+        }else{
+            $('#viewDesktopLink').text("Show Desktop Version");
+            $('meta[name="viewport"]').attr('content', 'width=device-width' );
+        }
+    });
+</script>
+
+
+<script>
+    function showMustSelectBranchPopup() {
+        alert("Please select a specific branch from the Branch dropdown menu.");
+    }
+
+    
+</script>
+
+</body>
+</html>

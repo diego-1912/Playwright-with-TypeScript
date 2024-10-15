@@ -1,0 +1,10 @@
+2024-10-07T15:37:35.162Z [info]: Navigating to https://test8.webops.net/do/startLogin for project Test9
+2024-10-07T15:37:56.688Z [info]: Attempting to log in for project Test9
+2024-10-07T15:38:27.551Z [error]: Failed to perform login for project Test9: page.waitForNavigation: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for navigation until "networkidle"
+============================================================
+2024-10-07T15:38:27.551Z [error]: Failed to set up project Test9: page.waitForNavigation: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for navigation until "networkidle"
+============================================================

@@ -1,0 +1,59 @@
+
+
+
+
+
+
+
+
+
+/* Controls */
+/* Branch Dropdown */
+.ListHeader     {
+    text-align: left;
+    background-color: #CFE1EF;
+    color: #000000;
+    width: 100%;
+}
+.ListItemSelected {
+    background-color: #fffde3;
+}
+
+.breadcrumb {
+    background: none;
+    margin-bottom: 0px;
+}
+.breadcrumb-wrapper {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom:20px;
+    margin-left: 0px;
+}
+.manufacturer-wrapper:before,
+.branch-wrapper:before {
+    content: "";
+    display:none;
+}
+.manufacturer-wrapper select.form-control,
+.branch-wrapper select.form-control {
+    height: 1.5em;
+    padding: 0px;
+}
+.manufacturer-wrapper,
+.branch-wrapper {
+    min-width: 200px;
+    padding: 8px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

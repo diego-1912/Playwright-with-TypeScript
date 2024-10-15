@@ -1,0 +1,107 @@
+.k-loading-image {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    background: url('/images/loader.gif') center no-repeat, url('/web/images/loader.gif') center no-repeat;
+    opacity: 0.4;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+}
+
+.k-pager-wrap {
+    background-color: #337ab7;
+    padding: 5px 30px 5px 30px;
+    color: #ffffff;
+    overflow: hidden;
+}
+/* Controls the pager's width */
+.k-pager-wrap .k-dropdown {
+    width: 50px !important;
+}
+
+/*Removes Bootstraps Badge style on the calendar*/
+.k-calendar .k-link .badge {
+    display: unset;
+    min-width: unset;
+    padding: unset;
+    font-size: unset;
+    font-weight: unset;
+    line-height: unset;
+    color: unset;
+    text-align: unset;
+    white-space: unset;
+    vertical-align: unset;
+    background-color: unset;
+    border-radius: unset;
+}
+
+/*BELOW ARE PENDING REMOVAL  UNCOMMENT IF NEEDED*/
+
+/* Customizes the page sizes (numbers) style within the pager control */
+/*.k-pager-numbers .k-state-selected {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    float: right;
+}*/
+
+/* Column header style for display:table */
+
+/*.k-link {
+    color: blue
+}*/
+
+/*.k-link:hover {
+    color: blue
+}*/
+
+/*kendo grid header- IIP search page*/
+/*.k-grid-header .k-header > .k-link {
+    color: #116BB0;
+}*/
+
+/*.th {
+    background-color: #cfe1ef;
+}*/
+/* Applied to the page sizes dropdown list and Kendo dropdown colors*/
+/*.customPageSizeNumbers .k-list > .k-state-focused.k-state-selected, .k-listview > .k-state-focused.k-state-selected, .k-state-focused.k-state-selected, td.k-state-focused.k-state-selected {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    box-shadow: none !important;
+}
+
+.customPageSizeNumbers .k-list > k-state-hover, .k-listview > .k-state-hover, .k-state-hover, td.k-state-hover,
+.k-list > .k-state-focused.k-state-selected.k-state-hover, .k-listview > .k-state-focused.k-state-selected.k-state-hover,
+.k-state-focused.k-state-selected.k-state-hover, td.k-state-focused.k-state-selected.k-state-hover {
+    background-color: #bcb4b0;
+}*/
+
+/*Kendo dropdown no bold*/
+/*.k-button, .k-header {
+    font-weight: normal;
+}*/
+
+/*Kendo dropdown white background*/
+/*.k-autocomplete.k-state-default, .k-picker-wrap.k-state-default, .k-numeric-wrap.k-state-default, .k-dropdown-wrap.k-state-default, .k-list-container,
+.k-autocomplete.k-state-default, .k-dropdown-wrap.k-state-default, .k-numeric-wrap.k-state-default, .k-picker-wrap.k-state-default {
+    background-color: white;
+}*/
+
+
+/*Kendo dropdown no shadow*/
+/*.k-widget.k-dropdown.k-header.form-control {
+    background-color: white;
+}*/
+
+/*Kendo dropdown and kendo calendar same height as form-control */
+/*.k-dropdown-wrap.k-state-default, .form-control.k-input {
+    height: 32px;
+}*/
+
+/*calendar colors*/
+/*.k-datetimepicker .k-select .k-link-date, .k-datetimepicker .k-select .k-link-time, .k-calendar .k-link {
+    color: #2e2e2e;
+}*/
+
+

@@ -1,0 +1,1057 @@
+/***********************************************
+* Webops Theme
+* Color variables and images go here.  NOTHING ELSE.
+* This file is instance-specific, so DO NOT use this for global styling.
+* DO NOT add anything here without adding it in all other theme files.
+* DO NOT reference variables in a theme file without adding that variable to all theme files.
+* Treat this as an instance config file.
+************************************************/
+/***********************************************
+* mainStyles.less
+* Mixins, variables used in other files, and primary page formatting go here.
+************************************************/
+/*.color-primary-gradient() {
+  background: @color-primary; // Old browsers
+  background: -moz-linear-gradient(top,  @color-menu-highlight 0%, @color-primary 100%); // FF3.6+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@color-menu-highlight), color-stop(100%,@color-primary)); // Chrome,Safari4+
+  background: -webkit-linear-gradient(top,  @color-menu-highlight 0%,@color-primary 100%); // Chrome10+,Safari5.1+
+  background: -o-linear-gradient(top,  @color-menu-highlight 0%,@color-primary 100%); // Opera 11.10+
+  background: -ms-linear-gradient(top,  @color-menu-highlight 0%,@color-primary 100%); // IE10+
+  background: linear-gradient(to bottom,  @color-menu-highlight 0%,@color-primary 100%); // W3C
+}*/
+/***********************************************
+* menu.less
+* Styling for the navbar
+************************************************/
+.navbar.navbar-webops {
+  border-radius: 0px;
+  min-height: 2em;
+  background-color: #0d5989;
+  border: none;
+}
+.navbar.navbar-webops .navbar-nav > li > a {
+  color: #d9d9d9;
+  text-decoration: none;
+}
+.navbar.navbar-webops .navbar-nav > li > a:hover {
+  color: #ffffff;
+}
+.navbar-webops .navbar-brand {
+  color: #d9d9d9;
+}
+.navbar.navbar-webops .navbar-nav > .open > a,
+.navbar.navbar-webops .navbar-nav > .open > a:focus,
+.navbar.navbar-webops .navbar-nav > .open > a:hover {
+  background-color: #347bb7;
+  color: #ffffff;
+}
+.nav > li > a {
+  padding: 10px 5px;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: #0d5989;
+}
+.navbar-webops .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+.navbar-webops .navbar-toggle:focus,
+.navbar-webops .navbar-toggle:hover,
+.navbar-webops .navbar-toggle {
+  background-color: #333;
+  border-color: #333;
+}
+/********************************* BOOTSTRAP RESPONSIVE NAVBAR OVERRIDE ******************************/
+/* Use this area for modifying the mobile version of the navbar
+/*****************************************************************************************************/
+@media (max-width: 992px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+  .dropdown-menu > li > a {
+    text-decoration: none;
+  }
+  .navbar-webops .navbar-nav .open .dropdown-menu > li > a {
+    color: #d9d9d9;
+    text-decoration: none;
+  }
+  .navbar-webops .nav .dropdown-menu > li > a:focus,
+  .navbar-webops .nav .dropdown-menu > li > a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffffff;
+  }
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+/********************************* BOOTSTRAP RESPONSIVE NAVBAR OVERRIDE END ******************************/
+/***********************************************
+* Helper.less
+* Common CSS styling with no particular category or context goes here
+************************************************/
+.strong {
+  font-weight: bold;
+}
+/* COLUMNS ********************************************************************************************************* */
+/* mmarkey 1/6/2015 adding some standardized column widths, loosely based on the bootstrap grid system */
+/* 12 is 100% width of the container, and the others are 1/12, 2/12 (1/6), 3/12 (1/4), 4/12 (1/3), etc...*/
+/* This will pretty much always give you columns of standard size. */
+/* See resource/column_demo.html for more info */
+/* mmarkey 1/22/2015 since adding bootstrap, you should NOT use these.  Use bootstrap's grid system instead for
+/* proper responsive formatting.
+/* ***************************************************************************************************************** */
+.col-0 {
+  width: 1%;
+  /* as small as we can get. use sparingly, since it won't behave as well as the other columns. */
+}
+.col-1 {
+  width: 8.33333333%;
+}
+.col-2 {
+  width: 16.66666667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333%;
+}
+.col-5 {
+  width: 41.66666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333333%;
+}
+.col-8 {
+  width: 66.66666667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333%;
+}
+.col-11 {
+  width: 91.66666667%;
+}
+.col-12 {
+  width: 100%;
+}
+/* Columns with buttons should be center aligned */
+.col-action {
+  text-align: center;
+  vertical-align: top;
+}
+/* END COLUMNS ***************************************************************************************************** */
+/* Use when labels have additional validation instructions or need further explanation (place span inside label tag) */
+.sublabel {
+  font-size: smaller;
+  display: block;
+  font-weight: normal;
+  color: #cccccc;
+}
+/* Use .required-field on labels for form controls that are required */
+.required-field {
+  font-style: italic;
+}
+.required-field:after {
+  content: " *";
+}
+form .row {
+  min-height: 3rem;
+}
+form .row.no-height {
+  min-height: unset;
+}
+.form-group .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row.form-group.no-margin-row {
+  margin-right: unset;
+  margin-left: unset;
+}
+.small-form {
+  font-size: smaller;
+}
+.form-group a.btn {
+  color: #000000;
+}
+.locked {
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background-color: none;
+  transition: none;
+  -webkit-transition: none;
+  -o-transition: none;
+}
+.form-group button.ui-multiselect {
+  /* NOTE: this is copied from bootstrap's form-control.  It should change if the bootstrap form-control changes. */
+  display: block;
+  width: 100% !important;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+@media (max-width: 768px) {
+  .btn.pull-right {
+    clear: both;
+  }
+}
+.ui-multiselect-menu {
+  width: auto !important;
+}
+/*.ui-widget.ui-widget-content ui-corner-all*/
+/********************************* BOOTSTRAP CHECKBOX OVERRIDE ******************************/
+input[type=checkbox].form-control {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: -50%;
+  margin: 10px;
+}
+
+input[type=radio].form-control {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: -50%;
+  margin: 10px;
+}
+input[type=radio].form-control.center-block {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: -50%;
+  margin: 10px;
+  display: block;
+  margin: auto;
+}
+.range-separator {
+  vertical-align: middle;
+  text-align: center;
+  font-size: xx-large;
+  line-height: 34px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 1em;
+}
+.multibox {
+  display: block;
+}
+/********************************* BOOTSTRAP CHECKBOX OVERRIDE END ******************************/
+/***********************************************
+* datatable.less
+* Styling for <display:table> paginated lists goes here.
+************************************************/
+/********************************* WEBOPS DATATABLE *********************************/
+.webops-datatable {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-spacing: 0px;
+  width: 100%;
+  -moz-border-radius-bottomleft: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  -moz-border-radius-bottomright: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.webops-datatable table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-spacing: 0px;
+}
+.webops-datatable tr:last-child td:last-child {
+  -moz-border-radius-bottomright: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.webops-datatable tr:last-child td:first-child {
+  -moz-border-radius-bottomleft: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.webops-datatable tr:hover td {
+  background-color: #cfe1ef;
+}
+.webops-datatable tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.webops-datatable tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+.webops-datatable td {
+  vertical-align: middle;
+  border: 1px solid #ffffff;
+  border-width: 0px 1px 1px 0px;
+  text-align: left;
+  padding: 3px;
+  color: #000000;
+}
+.webops-datatable tr:last-child td {
+  border-width: 0px 1px 0px 0px;
+}
+.webops-datatable tr td:last-child {
+  border-width: 0px 0px 1px 0px;
+}
+.webops-datatable tr:last-child td:last-child {
+  border-width: 0px 0px 0px 0px;
+}
+.webops-datatable th {
+  background-color: #cfe1ef;
+  border: 0px solid #ffffff;
+  text-align: left;
+  border-width: 0px 0px 1px 1px;
+  color: #000000;
+  padding: 3px;
+}
+.webops-datatable tr:first-child th:first-child {
+  border-width: 0px 0px 1px 0px;
+}
+.webops-datatable tr:first-child th:last-child {
+  border-width: 0px 0px 1px 1px;
+}
+.webops-datatable-wrapper {
+  padding: 0px;
+}
+.webops-datatable-wrapper .pagebanner {
+  background-color: #337ab7;
+  padding: 0px 30px 5px 30px;
+  color: #ffffff;
+  overflow: hidden;
+}
+.webops-datatable-wrapper .pagebanner a {
+  color: #ffffff;
+}
+.webops-datatable-wrapper .pagebanner a.btn-default {
+  color: #000000;
+}
+.webops-datatable-wrapper .pagebanner {
+  /* OVERRIDE FOR PUBLIC.CSS - REMOVE WHEN FACELIFT IS COMPLETE */
+  height: auto;
+  font-weight: normal;
+  border-top: none;
+  border-bottom: none;
+  font-size: inherit;
+}
+/********************************* WEBOPS DATATABLE END *********************************/
+/** SORTABLE **/
+.sortable-item {
+  margin: 3px;
+  border: 1px solid;
+  border-color: #cfe1ef;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.sortable-item span {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.sortable-item a {
+  color: #000000;
+}
+.sortable-item .btn {
+  height: 30px;
+  border: none;
+  color: #ffffff;
+  border-left: 1px solid;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+/* SORTABLE CONFIRMATION POPOVER FIX */
+.sortable-item .btn-xs {
+  height: 22px;
+  border: 1px solid;
+  border-radius: 3px;
+}
+.popover .btn-primary {
+  border-color: #2e6da4;
+}
+.popover .btn-default {
+  color: #333;
+  border-color: #ccc;
+}
+.handler {
+  display: inline-block;
+  width: 3em;
+  margin-right: 10px;
+  border-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.handler:after {
+  content: "\f047";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #cccccc;
+}
+.handler:hover {
+  background-color: #337ab7;
+  color: #ffffff;
+}
+.handler:hover:after,
+.hint .handler:after {
+  color: #ffffff;
+}
+.placeholder {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #cfe1ef;
+  background-color: #cfe1ef;
+  color: #ffffff;
+  font-size: larger;
+  margin-left: 3em;
+  padding: 7px;
+}
+.hint {
+  padding-right: 15px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #337ab7;
+  background-color: #337ab7;
+  color: #ffffff;
+}
+.sortable-delete.btn.btn-default {
+  color: #000000;
+  border-color: #cccccc;
+}
+/** SORTABLE END **/
+/** TYPEAHEAD **/
+@media (max-width: 768px) {
+  .k-animation-container {
+    left: 5% !important;
+  }
+}
+.dropdown-header {
+  width: calc(100% - 17px);
+}
+.k-list-container.k-popup.k-group.k-reset {
+  padding-top: 1.5em;
+}
+.k-animation-container .dropdown-header {
+  position: absolute;
+  top: 0em;
+  padding-left: 0px;
+}
+.k-animation-container .dropdown-header span {
+  text-transform: uppercase;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.k-list-container.k-popup.k-group.k-reset {
+  height: 600px;
+  max-width: 100%;
+}
+.k-list-container.k-popup.k-group.k-reset .k-virtual-wrap .k-virtual-content {
+  height: 580px;
+}
+.k-animation-container .k-virtual-wrap ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.k-animation-container .k-virtual-wrap li.k-item {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  padding: 0px;
+}
+.k-animation-container .k-virtual-wrap li.k-virtual-item span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.k-virtual-content {
+  overflow-y: scroll;
+  position: relative;
+}
+.k-state-border-down.k-autocomplete,
+.k-state-border-up.k-autocomplete,
+.k-state-active.k-dropdown-wrap,
+.k-state-active.k-picker-wrap,
+.k-state-focused.k-multiselect,
+.k-filebrowser .k-image,
+.k-tooltip {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.k-animation-container .k-header {
+  width: 100%;
+  border-width: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+/** TYPEAHEAD END **/
+/** DATEPICKER **/
+.k-icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.k-icon.k-i-calendar:before {
+  content: "\f073";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.k-icon.k-i-clock:before {
+  content: "\f017";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.k-icon.k-i-arrow-e:before {
+  content: "\f054";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.k-icon.k-i-arrow-w:before {
+  content: "\f053";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.k-datepicker.form-control {
+  width: 100%;
+}
+/** DATEPICKER END**/
+/** Stop messing with my bootstrap width **/
+.k-autocomplete,
+.k-combobox,
+.k-datepicker,
+.k-timepicker,
+.k-datetimepicker,
+.k-colorpicker,
+.k-numerictextbox,
+.k-dropdown,
+.k-selectbox,
+.k-textbox,
+.k-toolbar .k-split-button {
+  width: 100% !important;
+}
+/** Width end **/
+/***********************************************
+* responsive.less
+* Anything to do with responsive formatting for mobile/tablet/desktop goes here.
+************************************************/
+@media (min-width: 768px) {
+  .sublabel {
+    display: inline;
+    padding-left: 15px;
+  }
+}
+/********************************* BOOTSTRAP CONTAINER OVERRIDE ******************************/
+@media (min-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0px;
+  }}
+@media (max-width: 768px) {
+  .row {
+    margin: 0px;
+  }
+}
+/********************************* BOOTSTRAP CONTAINER OVERRIDE END ******************************/
+/*** Errors ***/
+.errors {
+  color: #a94442;
+  background-color: #f2dede;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+  display: block;
+}
+span.errors {
+  border: none;
+}
+/*** End Errors ***/
+.padded {
+  padding: 7px;
+}
+.text-muted {
+  color: #cccccc;
+}
+.footer {
+  margin-top: 50px;
+  padding: 15px;
+  font-size: smaller;
+  text-align: center;
+}
+.footer,
+.footer a {
+  color: #cccccc;
+}
+.logo {
+  padding: 7px;
+  width: 200px;
+}
+.logo {
+  /* OVERRIDE FOR PUBLIC.CSS; REMOVE WHEN FACELIFT IS COMPLETE */
+  height: auto;
+}
+.logo-image {
+  height: 41px;
+  background-image: url("../images/logos/webops-logo-header41px.png");
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-spacing: 0px;
+}
+/**** Titles ****/
+.panel-heading.info {
+  font-weight: bold;
+  line-height: 23px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color: #ffffff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.panel-heading-white.info {
+  font-weight: bold;
+  line-height: 23px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color: #337ab7;
+  background-color: #ffffff;
+  border-color: #337ab7;
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 10px;
+}
+.panel-heading-white-black-font.info {
+  font-weight: bold;
+  line-height: 23px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #337ab7;
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 10px;
+}
+
+.panel-heading-light-blue-black-font.info {
+  font-weight: bold;
+  line-height: 23px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color: #000000;
+  background-color: lightblue;
+  border-color: #337ab7;
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 10px;
+}
+.panel-heading.info .panel-title.page-title {
+  font-size: 20px;
+}
+.panel-default > .panel-heading {
+  color: #ffffff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #337ab7;
+}
+.panel-default {
+  border-color: #337ab7;
+}
+a[data-toggle="collapse"] {
+  width: 100%;
+  color: #ffffff;
+  text-decoration: none !important;
+}
+.panel-heading {
+  background-color: #337ab7;
+}
+a .panel-heading:hover {
+  background-color: #3399ed;
+}
+.panel-heading-link:hover {
+  text-decoration: none;
+}
+a .panel-heading .panel-title:after {
+  content: "\f0dc";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  float: right;
+}
+/*** Search ***/
+.search-heading {
+  background-color: #cfe1ef;
+  color: #000000;
+  padding: 5px 30px ;
+}
+.search-heading:hover {
+  background-color: #3399ed;
+  color: #ffffff;
+  font-weight: bold;
+}
+.search-heading:before {
+  content: "\f0dc";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  margin-right: 1em;
+}
+.search-footing {
+  background-color: #cfe1ef;
+  color: #000000;
+  padding: 5px 30px ;
+}
+.search-body {
+  padding: 7px 15px;
+}
+/**** Containers ****/
+/* container will resize depending on the screen size.  Keep that in mind while making this mobile friendly. */
+/* ...that means don't use width */
+.container-body {
+  border: 1px solid #337ab7;
+  border-top-width: 0px;
+  padding: 0px;
+}
+.container-body-noLine {
+  padding: 0px;
+}
+.container-detached {
+  margin-bottom: 20px;
+}
+.info-container,
+.search-container {
+  border: 1px solid #337ab7;
+  border-top-width: 0px;
+  padding: 0px;
+  border-bottom-width: 1px;
+  padding: 7px;
+}
+.info-container {
+  margin-bottom: 20px;
+}
+.manufacturer-wrapper,
+.branch-wrapper {
+  background-color: #cfe1ef;
+  color: #000000;
+  padding: 7px;
+}
+.manufacturer-wrapper form,
+.branch-wrapper form {
+  margin-bottom: 0px;
+}
+/*** End Containers ***/
+/*** Scanning ***/
+.hidden-scan-area {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+/*** End Scanning ***/
+/*** NewInterface Override ***/
+.Open {
+  color: inherit;
+  background-color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+.datepicker table tr td.new,
+.datepicker table tr td span.new {
+  background-color: inherit;
+}
+.datepicker td,
+p,
+th {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+.input-group.date {
+  padding: 0px;
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  z-index: 99999;
+}
+.preloader .preloader-gif {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40px 0 0 -40px;
+  background: url('../images/loader.gif') no-repeat;
+}
+.btn .glyphicon,
+.btn .fa {
+  padding: 0px 5px;
+}
+.break-wrap {
+  word-break: break-all;
+}
+a:link.btn.btn-default {
+  color: #000000;
+}
+a:link.btn {
+  color: #ffffff;
+}
+
+a:link.btn.btn-red-font{
+  color: red;
+}
+/*.breadcrumb li.current {
+  background: none;
+}*/
+/*** NewInterface Override END ***/
+ul.productSystemList {
+  list-style: none;
+  padding-left: 0;
+}
+ul.productSystemList > li::after {
+  content: ";";
+}
+.no-top-margin {
+  margin-top: 0px;
+}
+.top-margin-20 {
+  margin-top: 20px;
+}
+
+.top-margin-16 {
+  margin-top: 16px;
+}
+
+.full-width-minus-60 {
+  width: calc(100% - 60px);
+}
+.large-checkbox {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+}
+.checkbox-label {
+  margin-bottom: 0;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+
+.no-padding{
+  padding: 0px!important;
+}
+/*margin*/
+.margin-bottom-25-px {
+  margin-bottom: 25px;
+}
+.margin-bottom-10-px {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-5-px {
+  margin-bottom: 10px;
+}
+.height-55-px {
+  height: 55px;
+}
+.height-44-px {
+  height: 44px;
+}
+
+.btn-red-font {
+  text-shadow: 0 1px 0 #fff;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #dbdbdb;
+  border-color: #ccc;
+}
+.btn-red-font:hover,
+.btn-red-font:focus {
+  background-position: 0 -15px;
+}
+.btn-red-font:active,
+.btn-red-font.active {
+  background-color: #e0e0e0;
+  border-color: #dbdbdb;
+}
+.btn-red-font.disabled,
+.btn-red-font:disabled,
+.btn-red-font[disabled] {
+  background-color: #e0e0e0;
+  background-image: none;
+}
+.subheading {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.manufacturer-dropdown > label, .branch-dropdown > label {
+  margin-top: 4px;
+  margin-bottom: 0;
+  text-align: right;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .manufacturer-dropdown > label, .branch-dropdown > label {
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 16px;
+  }
+}
+
+.linkage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.linkage div {
+  border: solid 1px black;
+  background-color: #d8d2d2;
+  padding: 8px;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-left: -1px;
+}
+
+.linkage div:nth-child(odd) {
+  text-transform: uppercase;
+}
+
+.linkage .linkage-primary {
+  background-color: #cfe1ef;
+}
+
+.procedureCategoryNameLink {
+  color: #116BB0 !important;
+}
+
+.twoSectionHeader {
+  margin-top: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+.modal-body .modal-footer {
+  padding: unset;
+  padding-top: 15px;
+}
+
+.webops_btn-group_btn {
+  letter-spacing:normal;
+  font-family: arial, helvetica, clean, sans-serif;
+  text-transform: none;
+  margin-right: 10px;
+}
+
+.select{
+  color: red
+}
+
+.black{
+  color:black
+}
